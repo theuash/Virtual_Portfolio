@@ -1,0 +1,54 @@
+.notfound {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  padding: 10rem 2rem 5rem;
+}
+.notfound-blob {
+  position: absolute;
+  left: -100px;
+  top: 40%;
+  width: 400px; height: 400px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(147,95,76,0.1) 0%, transparent 70%);
+  pointer-events: none;
+}
+.notfound-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 3rem;
+  position: relative;
+  z-index: 2;
+}
+.notfound-title {
+  font-family: var(--serif);
+  font-size: clamp(4rem, 10vw, 8rem);
+  line-height: 0.95;
+  color: var(--cream);
+  margin-bottom: 1.5rem;
+}
+.notfound-title em { font-style: italic; color: var(--terracotta); }
+.notfound-sub { font-size: 1rem; color: var(--muted); margin-bottom: 3rem; }
+.notfound-home {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--terracotta);
+  border: 1px solid rgba(147,95,76,0.35);
+  border-radius: 10px;
+  padding: 0.75rem 1.5rem;
+  transition: var(--transition);
+}
+.notfound-home:hover {
+  background: rgba(147,95,76,0.1);
+  border-color: var(--terracotta);
+  color: var(--cream);
+}
+.notfound-home svg { transition: transform 0.25s; }
+.notfound-home:hover svg { transform: translateX(-3px); }

@@ -1,0 +1,51 @@
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(12, 10, 18, 0.85);
+  backdrop-filter: blur(10px);
+  z-index: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  animation: fadeIn 0.2s ease;
+}
+
+.modal-panel {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  width: 100%;
+  max-width: 700px;
+  max-height: 90vh;
+  overflow-y: auto;
+  animation: fadeUp 0.3s ease;
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 2rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.modal-title {
+  font-family: var(--serif);
+  font-size: 1.3rem;
+  color: var(--cream);
+}
+
+.modal-close {
+  background: none;
+  border: none;
+  color: var(--muted);
+  padding: 0.3rem;
+  border-radius: 6px;
+  transition: color 0.2s, background 0.2s;
+}
+.modal-close:hover { color: var(--cream); background: rgba(255,250,229,0.06); }
+
+.modal-body {
+  padding: 2rem;
+}

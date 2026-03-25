@@ -1,0 +1,42 @@
+.project-grid-wrap {}
+
+.project-filter-tabs {
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+  margin-bottom: 2.5rem;
+}
+
+/* inherits .filter-tab from FilterButtons.css via globals – duplicate inline for safety */
+.project-filter-tabs .filter-tab {
+  font-family: var(--sans);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.45rem 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  transition: var(--transition-fast);
+}
+.project-filter-tabs .filter-tab:hover {
+  border-color: rgba(255,250,229,0.2);
+  color: var(--cream);
+}
+.project-filter-tabs .filter-tab.active {
+  background: var(--terracotta);
+  border-color: var(--terracotta);
+  color: var(--cream);
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+@media (max-width: 1023px) { .project-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 640px)  { .project-grid { grid-template-columns: 1fr; } }

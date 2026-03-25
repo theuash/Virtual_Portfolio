@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" class="logo" type="image/png" href="/src/assets/logo.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="VIRTUAL — A collective of 12 creatives building at the intersection of craft and code." />
+  <meta property="og:title" content="VIRTUAL — Creative Technology Collective" />
+  <meta property="og:description"
+    content="12 designers, developers, and digital thinkers crafting exceptional digital experiences." />
+  <meta property="og:type" content="website" />
+  <title>VIRTUAL — Creative Technology Collective</title>
+
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+  <script>
+    // Invert the favicon dynamically
+    const favicon = document.querySelector('link[rel="icon"]');
+    const img = new Image();
+    img.src = favicon.href;
+    img.onload = () => {
+      const canvas = document.createElement("canvas");
+      canvas.width = img.width;
+      canvas.height = img.height;
+      const ctx = canvas.getContext("2d");
+      // Draw with color inversion
+      ctx.filter = "invert(90%)";
+      ctx.drawImage(img, 0, 0);
+      favicon.href = canvas.toDataURL("image/png");
+    };
+  </script>
+</body>
+
+</html>

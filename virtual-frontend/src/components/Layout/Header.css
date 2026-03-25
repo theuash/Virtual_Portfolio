@@ -1,0 +1,149 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  padding: 1.3rem 3rem;
+  transition: background 0.4s ease, border-color 0.4s ease, padding 0.3s ease;
+  border-bottom: 1px solid transparent;
+}
+
+.header--scrolled {
+  backdrop-filter: blur(18px) saturate(140%);
+  -webkit-backdrop-filter: blur(18px) saturate(140%);
+  background: rgba(27, 24, 33, 0.82);
+  border-color: var(--border);
+  padding: 1rem 3rem;
+}
+
+.header-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.header-logo img {
+  width: 10%;
+  height: 10%;
+  color: var(--cream);
+  transition: filter 0.25s;
+  filter: invert(100%) drop-shadow(0 0 50px #935F4C);
+}
+
+.header-logo img:hover {
+  filter: invert(100%) drop-shadow(10px 0 45px #a78a81);
+  transition: filter 0.25s;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.nav-link {
+  font-size: 0.73rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  position: relative;
+  transition: color 0.25s;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--terracotta);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--cream);
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--terracotta);
+  border: 1px solid rgba(147, 95, 76, 0.35);
+  border-radius: 8px;
+  padding: 0.55rem 1.1rem;
+  transition: var(--transition);
+}
+
+.header-cta:hover {
+  background: rgba(147, 95, 76, 0.12);
+  border-color: var(--terracotta);
+  color: var(--cream);
+}
+
+.header-cta svg {
+  transition: transform 0.25s;
+}
+
+.header-cta:hover svg {
+  transform: translateX(3px);
+}
+
+/* Hamburger */
+.hamburger {
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.5rem 0.7rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+.hamburger:hover {
+  border-color: var(--terracotta);
+}
+
+.hamburger span {
+  display: block;
+  width: 20px;
+  height: 1.5px;
+  background: var(--cream);
+  border-radius: 2px;
+}
+
+@media (max-width: 1023px) {
+  .header {
+    padding: 1rem 1.5rem;
+  }
+
+  .header--scrolled {
+    padding: 0.85rem 1.5rem;
+  }
+
+  .header-nav {
+    display: none;
+  }
+}

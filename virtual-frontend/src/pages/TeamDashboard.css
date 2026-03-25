@@ -1,0 +1,32 @@
+.team-dashboard {
+  padding-top: 7rem;
+  padding-bottom: 5rem;
+}
+
+.td-header {
+  padding-top: 4rem;
+  padding-bottom: 3rem;
+}
+
+.td-intro {
+  font-size: 1rem;
+  color: var(--muted);
+  line-height: 1.8;
+  max-width: 520px;
+  margin-top: 1rem;
+}
+
+.td-filters {
+  padding-bottom: 0;
+}
+
+.td-count {
+  font-size: 0.75rem;
+  color: var(--muted);
+  letter-spacing: 0.1em;
+  margin-bottom: 1.5rem;
+}
+
+.td-grid-wrap {
+  padding-top: 0;
+}

@@ -1,0 +1,32 @@
+/* ═══════════════════════════════════════════════════════
+   VIRTUAL — Responsive Breakpoints
+   ═══════════════════════════════════════════════════════ */
+
+/* Mobile  : 320px – 767px */
+/* Tablet  : 768px – 1023px */
+/* Desktop : 1024px – 1439px */
+/* Wide    : 1440px+ */
+
+/* ─── Grid helpers ─── */
+.grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
+.grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+.grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; }
+
+@media (max-width: 1023px) {
+  .grid-4 { grid-template-columns: repeat(2, 1fr); }
+  .grid-3 { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 767px) {
+  .grid-4,
+  .grid-3,
+  .grid-2 { grid-template-columns: 1fr; }
+
+  .section-container { padding: 0 1.25rem; }
+
+  .hide-mobile { display: none !important; }
+}
+
+@media (min-width: 768px) {
+  .hide-desktop { display: none !important; }
+}

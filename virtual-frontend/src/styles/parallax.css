@@ -1,0 +1,89 @@
+/* ═══════════════════════════════════════════════════════
+   VIRTUAL — Parallax & Scroll Effects
+   ═══════════════════════════════════════════════════════ */
+
+.parallax-container {
+  position: relative;
+  overflow: hidden;
+  will-change: transform;
+}
+
+.parallax-layer {
+  position: absolute;
+  inset: -20%;
+  will-change: transform;
+  pointer-events: none;
+}
+
+/* ─── Hero Blobs ─── */
+.hero-blob {
+  position: absolute;
+  width: 65vw;
+  height: 65vw;
+  max-width: 900px;
+  max-height: 900px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(147,95,76,0.16) 0%, transparent 70%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: blobPulse 8s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.hero-blob-2 {
+  position: absolute;
+  width: 40vw;
+  height: 40vw;
+  max-width: 500px;
+  max-height: 500px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(104,130,173,0.12) 0%, transparent 70%);
+  top: 60%;
+  left: 62%;
+  animation: blobPulse2 11s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.hero-blob-3 {
+  position: absolute;
+  width: 30vw;
+  height: 30vw;
+  max-width: 380px;
+  max-height: 380px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(94,158,173,0.08) 0%, transparent 70%);
+  top: 20%;
+  left: 20%;
+  animation: blobPulse2 14s ease-in-out infinite reverse;
+  pointer-events: none;
+}
+
+/* ─── Floating Elements ─── */
+.float-element {
+  animation: float 4s ease-in-out infinite;
+}
+.float-element:nth-child(2) { animation-delay: -1.5s; }
+.float-element:nth-child(3) { animation-delay: -3s; }
+
+/* ─── Decorative Lines ─── */
+.deco-line {
+  position: absolute;
+  width: 1px;
+  height: 120px;
+  background: linear-gradient(to bottom, transparent, var(--terracotta), transparent);
+  opacity: 0.25;
+  pointer-events: none;
+}
+
+/* ─── Scroll progress indicator ─── */
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 2px;
+  background: var(--terracotta);
+  z-index: 200;
+  transform-origin: left;
+  transition: none;
+}
