@@ -118,7 +118,7 @@ export const members = [
     email: "maazmohammed072006@gmail.com",
     image: "../Portfolios/maaz/images/maaz.jpeg",
     bio: "Chris is a product thinker who connects customer insights to engineering and design realities. They have launched multiple B2C and B2B products from zero to one, and thrive in the ambiguity of early-stage product development.",
-    skills: ["Product Strategy", "Agile", "Data Analytics"],
+    skills: ["DevOps", "Agile", "Data Analytics"],
     tools: ["Jira", "Amplitude", "Notion", "Figma", "Tableau"],
     socialLinks: {
       linkedin: "https://in.linkedin.com/in/mohammed-maaz-b90755389",
