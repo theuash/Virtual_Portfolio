@@ -36,12 +36,12 @@ export const members = [
     role: "developer",
     email: "sushritas8406@gmail.com",
     image: "../Portfolios/sushrita/images/sushrita.jpg",
-    bio: "Jordan is a full-stack engineer who loves building scalable systems and clean APIs. They specialize in React, Node.js, and cloud architecture, and are passionate about developer experience and open-source contribution.",
+    bio: "Sushrita is a full-stack engineer who loves building scalable systems and clean APIs. They specialize in React, Node.js and is passionate about developer experience and open-source contribution.",
     skills: ["React", "Node.js", "AWS"],
     tools: ["VS Code", "PostgreSQL", "Docker", "Terraform", "GitHub Actions"],
     socialLinks: {
       linkedin: "#",
-      github: "#",
+      github: "https://github.com/sushritas0804",
       twitter: "#",
       portfolio: "#"
     },
