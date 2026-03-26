@@ -138,32 +138,44 @@ export const members = [
     featured: false
   },
   {
-    id: "V2406",
-    name: "Sachin",
-    title: "Frontend Engineer",
-    role: "developer",
-    email: "[EMAIL_ADDRESS]",
-    image: "../Portfolios/sachin/images/sachin.jpg",
-    bio: "Taylor obsesses over the intersection of engineering and design. They build pixel-perfect UIs with a deep understanding of browser rendering, performance optimization, and accessibility standards.",
-    skills: ["React", "TypeScript", "CSS"],
-    tools: ["VS Code", "Storybook", "Cypress", "Vite", "Chromatic"],
-    socialLinks: {
-      linkedin: "#",
-      github: "#",
-      twitter: "#",
-      portfolio: "#"
-    },
-    about: {
-      whatIDo: [
-        { title: "Component Systems", description: "Building scalable design systems and component libraries used across entire products.", icon: "grid" },
-        { title: "Performance", description: "Optimizing web vitals, bundle sizes, and rendering performance for fast, responsive apps.", icon: "zap" },
-        { title: "Accessibility", description: "Ensuring every interface meets WCAG standards so everyone can use what we build.", icon: "shield" }
-      ]
-    },
-    projects: ["project-1", "project-8"],
-    portfolioPath: null,
-    featured: false
+  id: "V2406",
+  name: "Sachin",
+  title: "Data Science Undergraduate | AI/ML & Full‑Stack",
+  role: "data science & full‑stack developer",
+  email: "sachins43270@gmail.com",
+  image: "../Portfolios/sachin/images/sachin.jpg",
+  bio: "Data Science undergraduate passionate about AI/ML, full‑stack development, and building impactful solutions. Experienced in signal processing, NLP, cloud deployment, and hackathon problem‑solving — winner of a state‑level competition.",
+  skills: ["Python", "JavaScript", "React.js", "Node.js", "Django", "SQL", "NLP", "Signal Processing", "Cloud Computing"],
+  tools: ["Git", "GitHub", "VS Code", "Cloud Deployment", "Django REST"],
+  socialLinks: {
+    linkedin: "https://www.linkedin.com/in/sachin-sachin-522b05331/",
+    github: "https://github.com/sachin-devadiga",
+    twitter: "https://x.com/SachinSach22591",
+    portfolio: "#"
   },
+  about: {
+    whatIDo: [
+      {
+        title: "AI & Machine Learning",
+        description: "Building classifiers, NLP models, and real‑time ML insights. Experience with EEG signal processing and AI‑text detection.",
+        icon: "grid"
+      },
+      {
+        title: "Full‑Stack Development",
+        description: "Creating end‑to‑end web applications using React, Node.js, Django, and scalable cloud deployments.",
+        icon: "zap"
+      },
+      {
+        title: "Data Science & Signal Processing",
+        description: "Extracting meaningful features from complex data, visualization, and building data‑driven solutions.",
+        icon: "shield"
+      }
+    ]
+  },
+  projects: ["medstudy", "eeg-analyser", "ai-text-detector"],
+  portfolioPath: null,
+  featured: false
+},
   {
     id: "V2501",
     name: "Pranav N",
