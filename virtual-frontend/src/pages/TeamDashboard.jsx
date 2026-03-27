@@ -20,7 +20,7 @@ const TeamDashboard = () => {
 
   const filtered = useMemo(() => {
     return members
-      .filter(m => activeFilter === 'all' || m.role === activeFilter)
+      .filter(m => activeFilter === 'all' || (Array.isArray(m.role) ? m.role.includes(activeFilter) : m.role === activeFilter))
       .filter(m => {
         if (!searchQuery) return true;
         const q = searchQuery.toLowerCase();
